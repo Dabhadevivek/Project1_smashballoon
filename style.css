@@ -1,0 +1,100 @@
+*{
+    padding: auto;/* its free inner part of box*/
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; /* Replace with your desired font family */
+    /* Your element styles here */
+}
+
+html,body{
+    
+    display: flex;  /* Flexbox is a layout model that provides an efficient and flexible way to arrange and distribute space among items within a container, even when the items have dynamic sizes or unknown widths.*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+#main{
+    background-color: aquamarine;
+    width: 100%;
+    height: 100%;
+}
+
+#panel{
+    overflow: hidden;/* used to hide out side part of ptop so it can be used to make border r same as panel */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;  /* You can adjust the border-radius value to achieve the desired level of rounded corners.*/
+
+
+    
+ background-color: rgb(243, 248, 246);
+ width: 70%;
+ height: 70%;
+
+}
+
+
+#ptop{
+    padding: 0px  20%;
+    justify-content: space-between;
+    align-items: center;
+    display:flex ;
+    color:#fff;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(130, 183, 165);
+}
+
+.box{
+ color: #628d53;   
+ font-weight: 700;
+ font-size: 15px;
+ padding: 10px ;
+ border-radius: 5px;
+ background-color: ghostwhite;
+ flex-basis: 0;
+}
+
+.elem{
+    align-items: center;
+    display: flex;
+    gap: 30%;   /* Adjust the gap size as needed --used to control the spacing between flex items within a flex container. */
+}
+
+
+#pbtm{
+
+    justify-content: center;
+    align-items: center;
+    display: flex;/*  help to make vert to hori*/
+    gap: 10px;
+   flex-wrap: wrap;/*helps to make elemts on next line*/
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+    
+}
+
+.bubble{
+    
+    display: flex;/*  help to make vert to hori*/
+    align-items: center;
+    justify-content: center;/*        above 3 gives write it in center*/
+    width: 40px;
+    height: 40px;
+    background-color:rgb(172, 198, 159);
+    border-radius: 100%;
+    color: white;
+}
+
+.bubble:hover{
+    pointer-events: all;
+    background-color:rgb(41, 90, 41);
+}
